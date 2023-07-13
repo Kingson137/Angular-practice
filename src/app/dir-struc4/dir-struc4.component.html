@@ -1,0 +1,54 @@
+<p>dir-struc4 works!</p>
+
+
+
+<h1>ngIf Example</h1>
+
+<p *ngIf="true">ngIf execute when it is true.</p>
+<br>
+
+
+
+<p>Checkbox exapmle for ngIf</p>
+
+<div>
+<label>Checkbox</label>
+<input type="checkbox" [(ngModel)]="show">
+</div>
+{{show}}
+<p *ngIf="show">Show is Checked</p>
+<p *ngIf="!show">Show is not Checked</p>
+<br>
+
+
+
+<p>Checkbox example for ngIf using else</p>
+
+<div>
+<label>Checkbox</label>
+<input type="checkbox" [(ngModel)]="show">
+</div>
+{{show}}
+<p *ngIf="show; else elseBlock">Show is Checked</p>
+<ng-template #elseBlock>
+<p>Show is not checked</p>
+</ng-template>
+<br>
+   
+    
+<p>Checkbox example for ngIf using then</p>    <!--check the condition outside the div-->
+
+<div>
+<label>Checkbox</label>
+<input type="checkbox" [(ngModel)]="show">
+</div>
+{{show}}
+<div *ngIf="show; then thenBlock; else elseBlock">
+</div>
+<ng-template #thenBlock>
+<p>Show is checked</p>
+</ng-template>
+<ng-template #elseBlock>
+<p>Show is not checked</p>
+</ng-template>
+       

@@ -1,0 +1,40 @@
+<div class="container">
+     <h1>Template driven form</h1>
+     <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" >
+          <div>
+               <label for="username"> User name</label>
+               <input type="text" name="username" id="username" placeholder="Enter your name" ngModel>
+          </div>
+          <div>
+               <label for="email">Email</label>
+               <input type="text" name="email" id="email" placeholder="Enter your email" ngModel>
+          </div>
+          <div>
+               <label for="gender">Gender</label>
+               <input type="radio" name="gender" id="gender" value="male" ngModel>Male
+               <input type="radio" name="gender" id="gender" value="female" ngModel>Female
+          </div>
+          <div>
+               <label for="isMarried">Married</label>
+               <input type="checkbox" name="isMarried" id="isMarried">
+          </div> 
+          <div>
+               <label for="country">Country</label>
+               <select name="country" id="country">
+                    <option *ngFor="let c of countryList">{{c.countryname}}</option>
+               </select>
+          <div>
+               <button type="submit">Submit</button>
+          </div>     
+          </div>
+     </form>
+</div>
+
+
+<!--
+<form  class="container" #newform="ngForm" (ngSubmit)="submitForm(newform.value)">
+     <input type="text" name="username" placeholder="enter name" [(ngModel)]="username" required><br>
+     <span *ngIf="newform.controls['username'].invalid && newform.controls[username].touched">Fill the name</span><br>
+     <button>Submit</button>
+</form>
+--->

@@ -1,0 +1,16 @@
+<p>dir-struc3 works!</p>
+
+
+
+<label>Type number</label>
+<input type="text" [(ngModel)]="number">
+<div [ngSwitch]="number">
+    <div *ngSwitchCase="1">One</div>
+    <div *ngSwitchCase="2">two</div>
+    <div *ngSwitchCase="3">three</div>
+    <div *ngSwitchCase="4">four</div>
+    <div *ngSwitchCase="5">five</div>
+    <div *ngSwitchCase="6">six</div>
+</div>
+
+<!--ngSwitchCase-->

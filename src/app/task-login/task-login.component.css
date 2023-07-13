@@ -1,0 +1,29 @@
+.form-box {
+    background-color: rgb(5, 0, 28, 0.7);
+    padding: 25px;
+    width: 400px;
+    height: auto;
+    margin-left: 450px;
+    position: absolute;
+    margin-top: 90px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: black;
+}
+
+.form-group {
+    text-align: center;
+    padding: 15px;
+}
+
+.btn-success {
+    background-color: chartreuse;
+    margin-left: 140px;
+    color: rgb(0, 0, 0);
+    margin-left: 180px;
+}
+
+#login {
+    text-align: center;
+    font-size: 25px;
+}

@@ -1,0 +1,27 @@
+input{
+    width: 70%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.container{
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    box-shadow: 0 0 10px #b99393;
+    padding: 2%;
+    background-color: rgb(203, 255, 155);
+    height: 40%;
+}
+p{
+    font-weight: 500;
+}

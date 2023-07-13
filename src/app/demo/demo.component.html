@@ -1,0 +1,12 @@
+<h1>User inputs into json</h1>
+<div>
+    <input type="text" name="username" placeholder="Enter name" [(ngModel)]="username">
+</div>
+<div>
+    <input type="number" name="phone" placeholder="enter phone" [(ngModel)]="phone">
+</div>
+<div>
+    <input type="number" name="age" placeholder="enter age" [(ngModel)]="age">
+</div>
+<button (click)="store()">Store</button>
+<p *ngIf="stored">{{stored | json}}</p>

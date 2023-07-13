@@ -1,0 +1,13 @@
+<p>dir-struc6 works!</p>
+
+<div [ngStyle]="{'color':'blue','background-color':'grey'}">Checking ngStyle</div>
+<br>
+
+<div [ngStyle]="{'color':status=='error'?'red':'blue'}">Checking ngStyle</div>
+<br>
+
+
+Color<input type="text" [(ngModel)]="color">
+<div [ngStyle]="{
+     'color':color
+}">Checking ngStyle</div> 

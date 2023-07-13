@@ -1,0 +1,18 @@
+<pre>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr *ngFor="let u of storedjson">
+            <td>{{u.id}}</td>
+            <td>{{u.name}}</td>
+            <td>{{u.age}}</td>
+            <td>{{u.city}}</td>
+        </tr>
+    </table>
+
+    <button class="btn btn-success" (click)="viewjsondetails()">View data</button>
+</pre>

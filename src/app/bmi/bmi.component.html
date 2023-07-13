@@ -1,0 +1,13 @@
+<div class="container">
+
+    <h1>BMI Calculator</h1>
+    <h2>Weight</h2>
+    <input type="number" placeholder="Your weight" [(ngModel)]="weight" />
+
+    <h2>Height</h2>
+    <input type="number" placeholder="Your height in meter" [(ngModel)]="height" />
+
+    <h1 *ngIf="height != 0 && weight != 0">{{ calculateBMI().toFixed(2) }}</h1>
+    <p *ngIf="height == 0 || weight == 0">Enter your weight and height</p>
+
+</div>

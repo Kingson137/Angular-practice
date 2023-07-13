@@ -1,0 +1,18 @@
+<div class="container">
+<h2>To-Do List</h2>
+
+<div>
+  <p>Total Tasks: {{ tasks.length }}</p>
+  <p>Completed Tasks: {{ getCompleted().length }}</p>
+  <p>Pending Tasks: {{ getPending().length }}</p>
+</div>
+
+<div>
+  <ul>
+    <li *ngFor="let task of tasks">
+      <input type="checkbox" [(ngModel)]="task.completed" (change)="update()">
+      {{ task.title }}
+    </li>
+  </ul>
+</div>
+</div>

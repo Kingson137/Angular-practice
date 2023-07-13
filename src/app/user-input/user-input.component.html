@@ -1,0 +1,25 @@
+<div class="container">
+<h2>Store user inputs in json</h2>
+
+<div>
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" [(ngModel)]="name"/>
+</div>
+
+<div>
+  <label for="phone">Phone:</label><br>
+  <input type="number" id="phone" [(ngModel)]="phone"/>
+</div>
+
+<div>
+  <label for="age">Age:</label><br>
+  <input type="number" id="age" [(ngModel)]="age"/>
+</div>
+
+<button (click)="store()">Store</button>
+
+<div *ngIf="stored">
+  {{ stored | json }}
+</div>
+</div>
+

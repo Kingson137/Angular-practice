@@ -1,0 +1,32 @@
+<div class="container">
+<h2>Date pipes</h2>
+
+<p>Unformatted date: {{varDate}}</p>
+<p>Formatted date: {{varDate|date}}</p>
+<p>Medium: {{varDate|date:'medium'}}</p>
+<p>Short: {{varDate|date:'short'}}</p>
+<p>Fulldate: {{varDate|date:'fullDate'}}</p>
+<p>Longdate: {{varDate|date:'longDate'}}</p>
+<br>
+
+<h2>Uppercase, Lowercase pipes</h2>
+<br>
+<p>Original: {{message}}</p>
+<p>Lowercase: {{message|lowercase}}</p>
+<p>Uppercase: {{message|uppercase}}</p>
+<br>
+
+<h2>Currency pipes</h2>
+
+<p>Price without formatting: {{price}}</p>
+<p>Price with formatting: {{price|currency}}</p>
+<p>Price with formatting: {{price|currency:'INR'}}</p>
+<p>Price with formatting: {{price|currency:'INR':false}}</p>
+
+<h2>Slice pipe</h2>
+
+<p>Original: {{app}}</p>
+<p>example1: {{app|slice:0:9}}</p>
+<p>example2: {{app|slice:-9}}</p>
+<br>
+</div>
